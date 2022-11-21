@@ -40,6 +40,18 @@ textarea {
     height: 5em;
 }
 
+input::placeholder {
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.3 ease;
+}
+
+input:focus::placeholder {
+    position: absolute;
+    font-size: 10px;
+    
+}
+
 .button {
     padding-left: 90px;
 }
