@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de imóveis</title>
 
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="shortcut icon" href="./src/img/icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
 
@@ -14,15 +15,21 @@
     <form action="#">
         <div>
             <label for="tipo">Tipo de imóvel:</label>
-            <input type="text" id="tipo" placeholder="casa, ap, kitnet, sítio, lote...">
-        </div>
-        <div>
-            <label for="localização">Localização:</label>
-            <input type="text" id="localizacao" placeholder="cidade, bairro, rua, número...">
+            <select name="tipoimovel" id="tipoimovel">
+                <option value="casa">casa</option>
+                <option value="apartamento">apartamento</option>
+                <option value="kitnet">kitnet</option>
+                <option value="sitio">sítio</option>
+                <option value="lote">lote</option>
+            </select>
         </div>
         <div>
             <label for="negocio">Négocio:</label>
-            <input type="text" id="negocio" placeholder="venda, compra, aluga...">
+            <select name="tiponegocio" id="tiponegocio">
+                <option value="venda">venda</option>
+                <option value="compra">compra</option>
+                <option value="aluga">aluga</option>
+            </select>
         </div>
         <div>
             <label for="tamanho">Tamanho:</label>
@@ -32,9 +39,66 @@
             <label for="preco">Preço:</label>
             <input type="number" id="preco" placeholder="$">
         </div>
-        <div class="button">
-            <button type="submit">Enviar inscrição do imóvel</button>
+
+        <div>
+            <div>
+             <legend>Endereço:</legend>
+             <label for="cep">CEP:</label>
+             <input type="text" id="cep">
+            </div> 
+            <div>
+             <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+            </div>
+            <div>
+             <label for="cidade">Cidade:</label>
+             <input type="text" id="text" name="text"><br><br>
+            </div>
+            <div>
+             <label for="bairro">Bairro</label>:</label>
+             <input type="text" id="text" name="text"><br><br>
+            </div>
+            <div>
+                <label for="rua">Rua:</label>
+                <input type="text">
+            </div>
+            <div>            
+            <label for="numero">Número:</label>
+             <input type="text" id="text" name="text"><br><br>
+            </div>
         </div>
+            <div class="button">
+                <button type="submit">Enviar inscrição do imóvel</button>
+            </div>
     </form>
 </body>
 </html>

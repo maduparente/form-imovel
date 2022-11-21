@@ -23,6 +23,19 @@ label {
     text-align: right;
 }
 
+legend {
+    text-align: center;
+    padding: 1ex;
+    font-family: sans-serif;
+}
+
+select {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
 input, textarea {
     font: 1em sans-serif;
     width: 300px;
