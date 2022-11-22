@@ -1,9 +1,13 @@
+h1 {
+    color: #CCC;
+}
 form {
     margin: 0 auto;
     width: 400px;
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
+    background-color: lightgray;
 }
 
 form div + div {
@@ -66,8 +70,12 @@ input:focus::placeholder {
 }
 
 .button {
-    padding-left: 90px;
+    padding-left: 100px;
+    
 }
 button {
     margin-left: .5em;
+    color: #000;
+    background-color: #CCC;
+    border-radius: 1em;
 }
